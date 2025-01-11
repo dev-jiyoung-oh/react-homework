@@ -1,0 +1,27 @@
+.switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  border: 0;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+
+  &.switch--on {
+    justify-content: flex-end;
+    background-color: var(--blue);
+  }
+
+  &.switch--off {
+    justify-content: flex-start;
+    background-color: var(--gray);
+  }
+
+  .knob-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
