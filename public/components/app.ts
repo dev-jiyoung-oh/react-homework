@@ -11,7 +11,6 @@ function App(props: { isOn: boolean; render: () => void }) {
     React.createElement(Switch, {
       id: "switch",
       status: props.isOn,
-      "aria-pressed": props.isOn,
       "aria-label": "Toggle switch",
       onClick: () => {
         props.render();

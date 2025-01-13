@@ -10,14 +10,17 @@ function Switch({ status, ...restProps }: SwitchProps) {
   return React.createElement(
     "button",
     {
+      type: "button",
       role: "switch",
       className: classNames,
+      "aria-checked": status,
       ...restProps,
     },
     React.createElement("img", {
       role: "presentation",
       className: "knob-icon",
       src: "/assets/ico_knob.svg",
+      alt: "",
     })
   );
 }
